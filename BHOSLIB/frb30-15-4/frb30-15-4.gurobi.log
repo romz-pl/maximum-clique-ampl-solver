@@ -1,0 +1,182 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18284262
+   Password : AiUGBfLn
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-26 08:31:47
+   End      : 2026-01-26 08:33:24
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-7.neos-server.org
+N = 450
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+450 variables, all binary
+101025 constraints, all linear; 202050 nonzeros
+	101025 inequality constraints
+1 linear objective; 450 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 450 variables (0 integer, 450 binary);
+Objectives: 1 linear; 
+Constraints:  101025 linear;
+
+AMPL MP final model has 450 variables (0 integer, 450 binary);
+Objectives: 1 linear; 
+Constraints:  101025 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 101025 rows, 450 columns and 202050 nonzeros
+Model fingerprint: 0xacc4414e
+Variable types: 0 continuous, 450 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 21.0000000
+Presolve removed 97364 rows and 0 columns
+Presolve time: 0.05s
+Presolved: 3661 rows, 450 columns, 15451 nonzeros
+Variable types: 0 continuous, 450 integer (450 binary)
+Performing another presolve...
+Presolve removed 188 rows and 0 columns
+Presolve time: 0.30s
+Root relaxation presolved: 3473 rows, 450 columns, 21378 nonzeros
+
+Warning: Markowitz tolerance tightened to 0.03125
+
+Root relaxation: objective 4.904989e+01, 2880 iterations, 0.82 seconds (1.12 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   49.04989    0  349   21.00000   49.04989   134%     -    1s
+H    0     0                      22.0000000   49.04989   123%     -    1s
+     0     0   31.73016    0  150   22.00000   31.73016  44.2%     -    1s
+H    0     0                      23.0000000   31.73016  38.0%     -    1s
+H    0     0                      24.0000000   30.00000  25.0%     -    2s
+     0     0   30.00000    0  124   24.00000   30.00000  25.0%     -    2s
+     0     0   30.00000    0  119   24.00000   30.00000  25.0%     -    2s
+     0     0   30.00000    0  115   24.00000   30.00000  25.0%     -    2s
+     0     0   30.00000    0  109   24.00000   30.00000  25.0%     -    2s
+H    0     0                      25.0000000   30.00000  20.0%     -    2s
+     0     0   30.00000    0  104   25.00000   30.00000  20.0%     -    2s
+H    0     0                      26.0000000   30.00000  15.4%     -    2s
+     0     0   30.00000    0  100   26.00000   30.00000  15.4%     -    2s
+     0     0   30.00000    0  108   26.00000   30.00000  15.4%     -    2s
+     0     0   30.00000    0  101   26.00000   30.00000  15.4%     -    2s
+H    0     0                      27.0000000   30.00000  11.1%     -    2s
+     0     0   30.00000    0  114   27.00000   30.00000  11.1%     -    2s
+     0     0   30.00000    0  114   27.00000   30.00000  11.1%     -    2s
+     0     0   30.00000    0  105   27.00000   30.00000  11.1%     -    3s
+     0     0   30.00000    0  105   27.00000   30.00000  11.1%     -    3s
+     0     2   30.00000    0  105   27.00000   30.00000  11.1%     -    3s
+H  399   235                      28.0000000   30.00000  7.14%  56.9    4s
+   680   273     cutoff   16        28.00000   30.00000  7.14%  54.3    5s
+  2194   759   29.00000   13  349   28.00000   30.00000  7.14%  52.1   10s
+H 2208   730                      29.0000000   30.00000  3.45%  51.8   13s
+  2219   738   29.00000   19  225   29.00000   30.00000  3.45%  60.7   15s
+  2234   748   29.66667   28  118   29.00000   30.00000  3.45%  60.3   20s
+  2660   743   30.00000   56   71   29.00000   30.00000  3.45%  72.5   25s
+  3853   418 infeasible   58        29.00000   30.00000  3.45%  74.5   30s
+  5547   295 infeasible   54        29.00000   30.00000  3.45%  78.8   35s
+  7834   330 infeasible   32        29.00000   30.00000  3.45%  80.6   40s
+ 10565   458 infeasible   49        29.00000   30.00000  3.45%  83.7   45s
+ 12906   417 infeasible   40        29.00000   30.00000  3.45%  85.0   50s
+ 14682   450   30.00000   46   81   29.00000   30.00000  3.45%  87.4   55s
+ 16401   382 infeasible   40        29.00000   30.00000  3.45%  89.2   60s
+ 17676   320 infeasible   42        29.00000   30.00000  3.45%  95.6   65s
+ 18377   297   30.00000   40   70   29.00000   30.00000  3.45%  99.3   70s
+ 19349   256 infeasible   55        29.00000   30.00000  3.45%   104   75s
+*20641   119              51      30.0000000   30.00000  0.00%   110   79s
+
+Cutting planes:
+  Gomory: 5
+  Cover: 10
+  Clique: 323
+  Zero half: 13
+
+Explored 20670 nodes (2281696 simplex iterations) in 79.34 seconds (130.80 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 10: 30 29 28 ... 21
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+01, best bound 3.000000000000e+01, gap 0.0000%
+Gurobi 12.0.3: optimal solution; objective 30
+2.2817e+06 simplex iterations
+20670 branching nodes
+clique_size = 30
+
+Vertices in clique
+==================
+13
+20
+33
+59
+74
+90
+98
+114
+123
+149
+158
+166
+187
+210
+221
+238
+247
+257
+278
+293
+307
+329
+337
+349
+367
+381
+400
+408
+429
+436
+
+NEOS Server Home
+
