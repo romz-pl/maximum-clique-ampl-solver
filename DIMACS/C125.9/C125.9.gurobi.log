@@ -1,0 +1,168 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18283937
+   Password : tOpgnjyT
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-26 05:50:06
+   End      : 2026-01-26 05:50:21
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-7.neos-server.org
+N = 125
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+125 variables, all binary
+7750 constraints, all linear; 15500 nonzeros
+	7750 inequality constraints
+1 linear objective; 125 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 125 variables (0 integer, 125 binary);
+Objectives: 1 linear; 
+Constraints:  7750 linear;
+
+AMPL MP final model has 125 variables (0 integer, 125 binary);
+Objectives: 1 linear; 
+Constraints:  7750 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 7750 rows, 125 columns and 15500 nonzeros
+Model fingerprint: 0xd907e186
+Variable types: 0 continuous, 125 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 26.0000000
+Presolve removed 7275 rows and 0 columns
+Presolve time: 0.01s
+Presolved: 475 rows, 125 columns, 1217 nonzeros
+Variable types: 0 continuous, 125 integer (125 binary)
+Root relaxation presolved: 475 rows, 125 columns, 1217 nonzeros
+
+
+Root relaxation: objective 4.322903e+01, 325 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   43.22903    0  124   26.00000   43.22903  66.3%     -    0s
+H    0     0                      27.0000000   43.22903  60.1%     -    0s
+H    0     0                      29.0000000   43.22903  49.1%     -    0s
+H    0     0                      30.0000000   43.22903  44.1%     -    0s
+H    0     0                      31.0000000   42.43292  36.9%     -    0s
+     0     0   42.38204    0  125   31.00000   42.38204  36.7%     -    0s
+H    0     0                      32.0000000   42.38204  32.4%     -    0s
+H    0     0                      33.0000000   42.38204  28.4%     -    0s
+     0     0   42.38204    0  125   33.00000   42.38204  28.4%     -    0s
+     0     0   41.66190    0  124   33.00000   41.66190  26.2%     -    0s
+     0     0   41.25931    0  124   33.00000   41.25931  25.0%     -    0s
+     0     0   41.25931    0  124   33.00000   41.25931  25.0%     -    0s
+     0     0   41.23274    0  124   33.00000   41.23274  24.9%     -    0s
+     0     0   40.81893    0  123   33.00000   40.81893  23.7%     -    0s
+H    0     0                      34.0000000   40.77647  19.9%     -    0s
+     0     0   40.77647    0  122   34.00000   40.77647  19.9%     -    0s
+     0     0   40.77647    0  123   34.00000   40.77647  19.9%     -    0s
+     0     0   40.75261    0  123   34.00000   40.75261  19.9%     -    0s
+     0     0   40.75261    0  123   34.00000   40.75261  19.9%     -    0s
+     0     0   40.75261    0  123   34.00000   40.75261  19.9%     -    0s
+     0     0   40.75261    0  123   34.00000   40.75261  19.9%     -    0s
+     0     0   40.21756    0  123   34.00000   40.21756  18.3%     -    0s
+     0     0   40.21756    0  123   34.00000   40.21756  18.3%     -    0s
+     0     2   40.21756    0  123   34.00000   40.21756  18.3%     -    0s
+
+Cutting planes:
+  Cover: 1
+  Clique: 5
+  Zero half: 14
+  RLT: 44
+  BQP: 21
+
+Explored 1606 nodes (63440 simplex iterations) in 0.75 seconds (0.94 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 8: 34 33 32 ... 26
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.400000000000e+01, best bound 3.400000000000e+01, gap 0.0000%
+Gurobi 12.0.3: optimal solution; objective 34
+63440 simplex iterations
+1606 branching nodes
+clique_size = 34
+
+Vertices in clique
+==================
+5
+7
+9
+11
+19
+25
+29
+31
+34
+44
+45
+49
+52
+54
+55
+66
+67
+68
+70
+77
+79
+80
+82
+85
+96
+98
+103
+104
+110
+114
+117
+121
+122
+125
+
+NEOS Server Home
+
