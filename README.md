@@ -37,3 +37,9 @@ $$
 
 ### 1994
 + The Maximum Clique Problem, [Journal of Global Optimization](https://doi.org/10.1007/BF01098364)
+
+
+##  Benchmarks
++ [DIMACS benchmark set](https://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark)
++ [BHOSLIB benchmark set](https://iridia.ulb.ac.be/~fmascia/maximum_clique/BHOSLIB-benchmark)
++ [Challenge Problems: Independent Sets in Graphs](https://oeis.org/A265032/a265032.html)
