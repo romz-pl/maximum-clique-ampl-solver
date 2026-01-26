@@ -1,0 +1,25 @@
+option gurobi_options 'presolve=2 iis=1 outlev=1';
+
+option presolve 0;
+option show_stats 2;
+
+display N;
+# display E;
+
+solve;
+
+display clique_size;
+
+# display X;
+
+printf "Vertices in clique\n";
+printf "==================\n";
+
+for {i in V}
+{
+	if X[i] > 0 then
+	{
+		printf "%d\n", i;
+	}
+}
+
