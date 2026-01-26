@@ -43,3 +43,5 @@ $$
 + [DIMACS benchmark set](https://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark)
 + [BHOSLIB benchmark set](https://iridia.ulb.ac.be/~fmascia/maximum_clique/BHOSLIB-benchmark)
 + [Challenge Problems: Independent Sets in Graphs](https://oeis.org/A265032/a265032.html)
++ [Combinatorial Optimization on Graphs](https://lcs.ios.ac.cn/~caisw/graphs.html)
+
