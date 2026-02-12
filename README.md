@@ -30,6 +30,7 @@ $$
 + A review on algorithms for maximum clique problems, [European Journal of Operational Research](https://doi.org/10.1016/j.ejor.2014.09.064)
 
 ### 2003
++ D.M. Gay, B.W. Kernighan [AMPL: A Modeling Language for Mathematical Programming](https://ampl.com/wp-content/uploads/BOOK.pdf), **Book**
 + Maximum independent set and related problems, with applications, [PhD Thesis, Sergiy Butenko](https://ufdcimages.uflib.ufl.edu/UF/E0/00/10/11/00001/butenko_s.pdf)
 
 ### 1999
